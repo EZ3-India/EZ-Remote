@@ -8,16 +8,16 @@ $(function() {
 
         self.brand = ko.computed(function() {
             if (self.name())
-                return gettext("EZ3") + ": " + self.name();
+                return gettext(" EZ3 ") + ": " + self.name();
             else
-                return gettext("EZ3");
+                return gettext(" EZ3 ");
         });
 
         self.title = ko.computed(function() {
             if (self.name())
-                return self.name() +  gettext("EZ-Remote") ;
+                return gettext("EZ-Remote ") + self.name();
             else
-                return gettext("EZ-Remote");
+                return gettext("EZ-Remote ");
         });
     }
 

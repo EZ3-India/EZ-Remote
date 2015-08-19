@@ -7,19 +7,23 @@
         <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png') }}">
         <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='img/apple-touch-icon-144x144.png') }}">
 
+
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+
         {% include 'stylesheets.jinja2' %}
         {% include 'initscript.jinja2' %}
+                <link rel="stylesheet" href="/static/css/stylesheet.css" type="text/css" charset="utf-8" />
+
     </head>
-    <body>
+    <body font-family: 'hallo_sansregular';>
         <div class="page-container">
             <div id="navbar" class="navbar navbar-static-top">
                 <div class="navbar-inner" data-bind="css: appearanceClasses">
                     <div class="container">
-                        <a class="brand" href="#"> <span data-bind="text: appearance.brand">EZ3</span></a>
+                        <a class="brand" href="#" style="font-family:hallo_sansblack"> <span data-bind="text: appearance.brand">EZ3</span></a>
                         <div class="nav-collapse">
                             <!-- Navbar -->
                             <ul class="nav pull-right">
@@ -111,7 +115,7 @@
                     {% endif %}
                 </div>
                 <div class="footer">
-                    
+
                     <ul class="pull-right">
                         <li><a href="http://www.ez3.in"><i class="icon-home"></i> {{ _('Homepage') }}</a></li>
 
